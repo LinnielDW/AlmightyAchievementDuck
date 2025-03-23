@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef>
+        <thingClass>ThingWithComps</thingClass>
+        <defName>AlmightyAchievementDuck</defName>
+        <label>AlmightyAchievementDuck</label>
+        <description>todo.</description>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Item</altitudeLayer>
+        <selectable>true</selectable>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <pathCost>14</pathCost>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>AlmightyAchievementDuck</texPath>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+            <Beauty>400</Beauty>
+            <Flammability>0</Flammability>
+            <MarketValue>1200</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+<!--        <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>-->
+        <allowedArchonexusCount>1</allowedArchonexusCount>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+        </comps>
+    </ThingDef>
+
+    <RecipeDef>
+<!--        TODO: finish-->
+        <defName>Make_AlmightyAchievementDuck</defName>
+        <label>make AlmightyAchievementDuck</label>
+        <description>todo.</description>
+        <jobString>Making wort.</jobString>
+        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Brewing</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <workAmount>1000</workAmount>
+        <targetCountAdjustment>1</targetCountAdjustment>
+<!--        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Apparel</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>-->
+        <!--<fixedIngredientFilter>
+            <thingDefs>
+                <li>RawHops</li>
+            </thingDefs>
+        </fixedIngredientFilter>-->
+        <products>
+            <AlmightyAchievementDuck>1</AlmightyAchievementDuck>
+        </products>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>
