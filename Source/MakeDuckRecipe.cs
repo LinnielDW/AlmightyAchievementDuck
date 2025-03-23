@@ -27,10 +27,6 @@ public static class MakeDuckRecipe
                      ((t.CountAsResource || ThingCategoryDefOf.Items
                           .ContainedInThisOrDescendant(t))
                       && 
-                      // !exclusions.Any(excludedCat =>
-                      //     excludedCat.ContainedInThisOrDescendant(t))
-                      // || inclusions.Any(includedCat =>
-                      //     includedCat.ContainedInThisOrDescendant(t))
                       t.thingCategories.Any(cat => AlmightyAchievementDuckSettings.GetOrCreateUseCategorySetting(cat.defName) && cat.ContainedInThisOrDescendant(t))
                       ) && t != DuckDefOf.AAD_AlmightyAchievementDuck
                  ))

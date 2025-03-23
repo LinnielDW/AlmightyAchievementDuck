@@ -2,7 +2,7 @@
 
 <Defs>
     <ThingDef>
-        <thingClass>ThingWithComps</thingClass>
+        <thingClass>AAD.AchievementDuckThingClass</thingClass>
         <defName>AAD_AlmightyAchievementDuck</defName>
         <label>almighty achievement duck</label>
         <!-- TODO -->
