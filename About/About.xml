@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>AlmightyAchievementDuck</name>
+    <name>Almighty Achievement Duck</name>
     <author>Arquebus</author>
     <supportedVersions>
         <li>1.5</li>
     </supportedVersions>
     <packageId>Arquebus.AlmightyAchievementDuck</packageId>
-    <description>AlmightyAchievementDuck</description>
+    <description>Almighty achievement duck is a mod that adds a single item to the game: The titular Achievement Duck. It requires one of almost every item in the game and its recipe scales with mods. The required categories can be changed for maximum compatibility and crafter sanity.</description>
 
     <loadAfter>
         <li>Ludeon.RimWorld</li>
