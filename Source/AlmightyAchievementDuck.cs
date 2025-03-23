@@ -1,5 +1,4 @@
-global using static AlmightyAchievementDuck.AlmightyAchievementDuck;
-using System.Linq;
+using AlmightyAchievementDuck.Settings;
 using UnityEngine;
 using Verse;
 

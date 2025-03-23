@@ -2,7 +2,7 @@
 using UnityEngine;
 using Verse;
 
-namespace AlmightyAchievementDuck;
+namespace AlmightyAchievementDuck.Settings;
 
 public partial class AlmightyAchievementDuckSettings
 {
