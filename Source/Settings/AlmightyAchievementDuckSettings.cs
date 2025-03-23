@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace AlmightyAchievementDuck.Settings;
+namespace AAD.Settings;
 
 public partial class AlmightyAchievementDuckSettings : ModSettings
 {
@@ -14,7 +14,7 @@ public partial class AlmightyAchievementDuckSettings : ModSettings
     public override void ExposeData()
     {
         base.ExposeData();
-        Scribe_Collections.Look(ref UseCategoryDefSettings, "UseCategoryDefSettings",
+        Scribe_Collections.Look(ref UseCategoryDefSettings, "AAD_UseCategoryDefSettings",
             LookMode.Value, LookMode.Value, ref _useCategoryDefNames, ref _boolValues,
             true);
 

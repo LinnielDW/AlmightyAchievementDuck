@@ -2,7 +2,7 @@
 using UnityEngine;
 using Verse;
 
-namespace AlmightyAchievementDuck.Settings;
+namespace AAD.Settings;
 
 public partial class AlmightyAchievementDuckSettings
 {
@@ -18,7 +18,7 @@ public partial class AlmightyAchievementDuckSettings
         var resetRect = new Rect(0f, listingStandard.CurHeight,
             (listingStandard.ColumnWidth * 0.25f) - 6f, 30f);
         if (Widgets.ButtonText(resetRect,
-                "AlmightyAchievementDuck_ResetCats".Translate()))
+                "AAD_ResetCats".Translate()))
         {
             ResetCats();
             Write();
@@ -26,7 +26,7 @@ public partial class AlmightyAchievementDuckSettings
 
         listingStandard.Gap(32f);
 
-        listingStandard.Label("AlmightyAchievementDuck_UseCategory".Translate());
+        listingStandard.Label("AAD_UseCategory".Translate());
 
 
         var viewRect = new Rect(inRect.x, listingStandard.CurHeight, inRect.width,
@@ -34,8 +34,6 @@ public partial class AlmightyAchievementDuckSettings
         var scrollRect = new Rect(viewRect.x, viewRect.y, viewRect.width - 32f,
             lastDrawnHeight);
 
-        // DrawBoxSolid(viewRect, Color.red);
-        // DrawBoxSolid(scrollRect, Color.green);
 
         var scrollable = scrollRect.height > viewRect.height;
         if (scrollable)
@@ -53,8 +51,6 @@ public partial class AlmightyAchievementDuckSettings
         var treeRect = new Rect(inRect.x, listingStandard.CurHeight, inRect.width - 16f,
             scrollRect.height);
 
-        // DrawBoxSolid(treeRect, Color.cyan);
-
         listingTree.Begin(treeRect);
         foreach (var child in ThingCategoryDefOf.Root.childCategories)
         {
@@ -67,8 +63,7 @@ public partial class AlmightyAchievementDuckSettings
         {
             Widgets.EndScrollView();
         }
-
-        // Widgets.EndGroup();
+        
         lastDrawnHeight = listingTree.CurHeight;
         listingStandard.End();
     }

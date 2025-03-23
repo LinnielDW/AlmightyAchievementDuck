@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <AlmightyAchievementDuck_SettingsTitle>Almighty Achievement Duck Settings</AlmightyAchievementDuck_SettingsTitle>
-    <AlmightyAchievementDuck_ResetCats>Reset Categories</AlmightyAchievementDuck_ResetCats>
-    <AlmightyAchievementDuck_UseCategory>Use Categories (Restart required to take effect)</AlmightyAchievementDuck_UseCategory>
+    <AAD_SettingsTitle>Almighty Achievement Duck Settings</AAD_SettingsTitle>
+    <AAD_ResetCats>Reset Categories</AAD_ResetCats>
+    <AAD_UseCategory>Use Categories (Restart required to take effect)</AAD_UseCategory>
 </LanguageData>

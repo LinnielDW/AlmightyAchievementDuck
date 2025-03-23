@@ -1,9 +1,8 @@
-using AlmightyAchievementDuck.Settings;
+using AAD.Settings;
 using UnityEngine;
 using Verse;
 
-
-namespace AlmightyAchievementDuck;
+namespace AAD;
 
 public class AlmightyAchievementDuck : Mod
 {
@@ -16,7 +15,7 @@ public class AlmightyAchievementDuck : Mod
 
     public override string SettingsCategory()
     {
-        return "AlmightyAchievementDuck_SettingsTitle".Translate();
+        return "AAD_SettingsTitle".Translate();
     }
 
     public override void DoSettingsWindowContents(Rect inRect)

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Verse;
 
-namespace AlmightyAchievementDuck.Settings;
+namespace AAD.Settings;
 
 public class Listing_Tree_ThingCategories : Listing_Tree
 {

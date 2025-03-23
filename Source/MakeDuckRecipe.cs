@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using AlmightyAchievementDuck.Settings;
+using AAD.Settings;
 using RimWorld;
 using Verse;
 
-namespace AlmightyAchievementDuck;
+namespace AAD;
 
 [StaticConstructorOnStartup]
 public static class MakeDuckRecipe
@@ -32,7 +32,7 @@ public static class MakeDuckRecipe
                       // || inclusions.Any(includedCat =>
                       //     includedCat.ContainedInThisOrDescendant(t))
                       t.thingCategories.Any(cat => AlmightyAchievementDuckSettings.GetOrCreateUseCategorySetting(cat.defName) && cat.ContainedInThisOrDescendant(t))
-                      ) && t != DuckDefOf.AlmightyAchievementDuck
+                      ) && t != DuckDefOf.AAD_AlmightyAchievementDuck
                  ))
         {
             var ingredient = new IngredientCount();
@@ -42,7 +42,7 @@ public static class MakeDuckRecipe
             allTheIngredients.Add(ingredient);
         }
 
-        DuckDefOf.Make_AlmightyAchievementDuck.ingredients = allTheIngredients;
+        DuckDefOf.AAD_Make_AlmightyAchievementDuck.ingredients = allTheIngredients;
 
         //TODO: refactor this:
         // foreach (var category in DefDatabase<ThingCategoryDef>.AllDefsListForReading.Where(_ => !exclusions.Union(inclusions).Any(c => c.ThisAndChildCategoryDefs.Contains(c))))

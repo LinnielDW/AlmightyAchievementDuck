@@ -1,13 +1,13 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace AlmightyAchievementDuck;
+namespace AAD;
 
 [DefOf]
 public static class DuckDefOf
 {
-    public static ThingDef AlmightyAchievementDuck;
-    public static RecipeDef Make_AlmightyAchievementDuck;
+    public static ThingDef AAD_AlmightyAchievementDuck;
+    public static RecipeDef AAD_Make_AlmightyAchievementDuck;
 
     public static ThingCategoryDef InertRelics;
     public static ThingCategoryDef Unfinished;

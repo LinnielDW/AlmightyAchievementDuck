@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>AlmightyAchievementDuck</RootNamespace>
+        <RootNamespace>AAD</RootNamespace>
         <AssemblyName>AlmightyAchievementDuck</AssemblyName>
         <TargetFramework>net472</TargetFramework>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>

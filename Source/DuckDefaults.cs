@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace AlmightyAchievementDuck;
+namespace AAD;
 
 [StaticConstructorOnStartup]
 public static class DuckDefaults
