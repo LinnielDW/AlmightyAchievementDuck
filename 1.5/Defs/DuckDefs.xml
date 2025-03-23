@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
     <ThingDef>
         <thingClass>ThingWithComps</thingClass>
-        <defName>AlmightyAchievementDuck</defName>
-        <label>AlmightyAchievementDuck</label>
-        <description>todo.</description>
+        <defName>AAD_AlmightyAchievementDuck</defName>
+        <label>almighty achievement duck</label>
+        <!-- TODO -->
+        <description>.</description>
         <category>Item</category>
         <drawerType>MapMeshOnly</drawerType>
         <tickerType>Normal</tickerType>
@@ -22,53 +24,37 @@
         </graphicData>
         <statBases>
             <Mass>1</Mass>
-            <Beauty>400</Beauty>
+            <Beauty>5000</Beauty>
             <Flammability>0</Flammability>
-            <MarketValue>1200</MarketValue>
+            <MarketValue>5000</MarketValue>
         </statBases>
         <thingCategories>
             <li>ItemsMisc</li>
         </thingCategories>
-<!--        <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>-->
-        <allowedArchonexusCount>1</allowedArchonexusCount>
+        <allowedArchonexusCount>0</allowedArchonexusCount>
         <comps>
             <li Class="CompProperties_Forbiddable" />
         </comps>
     </ThingDef>
 
     <RecipeDef>
-<!--        TODO: finish-->
-        <defName>Make_AlmightyAchievementDuck</defName>
-        <label>make AlmightyAchievementDuck</label>
-        <description>todo.</description>
-        <jobString>Making wort.</jobString>
-        <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-        <workSkill>Cooking</workSkill>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Brewing</soundWorking>
+        <defName>AAD_Make_AlmightyAchievementDuck</defName>
+        <label>Undertake the labor of creating the almighty achievement duck</label>
+        <description>Undertake the labor of creating the almighty achievement duck.</description>
+        <jobString>Completing a miracle.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Sculpt</effectWorking>
+        <soundWorking>Recipe_Sculpt</soundWorking>
         <allowMixingIngredients>true</allowMixingIngredients>
-        <workAmount>1000</workAmount>
+        <workAmount>100000</workAmount>
         <targetCountAdjustment>1</targetCountAdjustment>
-<!--        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Apparel</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>-->
-        <!--<fixedIngredientFilter>
-            <thingDefs>
-                <li>RawHops</li>
-            </thingDefs>
-        </fixedIngredientFilter>-->
         <products>
-            <AlmightyAchievementDuck>1</AlmightyAchievementDuck>
+            <AAD_AlmightyAchievementDuck>1</AAD_AlmightyAchievementDuck>
         </products>
         <recipeUsers>
             <li>CraftingSpot</li>
         </recipeUsers>
+        <workSkill>Crafting</workSkill>
+        <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     </RecipeDef>
 </Defs>
