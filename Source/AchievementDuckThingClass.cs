@@ -9,7 +9,7 @@ namespace AAD;
 public static class AchievementDuckUtils
 {
     public static readonly CachedTexture
-        DuckGizmoTexture = new("AlmightyAchievementDuck");
+        DuckGizmoTexture = new("duckascend");
 }
 
 public class AchievementDuckThingClass : ThingWithComps
