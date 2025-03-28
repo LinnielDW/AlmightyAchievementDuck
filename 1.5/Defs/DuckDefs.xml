@@ -25,7 +25,7 @@
             <Mass>1</Mass>
             <Beauty>5000</Beauty>
             <Flammability>0</Flammability>
-            <MarketValue>5000</MarketValue>
+            <MarketValue>50000</MarketValue>
         </statBases>
         <thingCategories>
             <li>ItemsMisc</li>
