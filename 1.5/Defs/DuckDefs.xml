@@ -5,8 +5,7 @@
         <thingClass>AAD.AchievementDuckThingClass</thingClass>
         <defName>AAD_AlmightyAchievementDuck</defName>
         <label>almighty achievement duck</label>
-        <!-- TODO -->
-        <description>.</description>
+        <description>The almighty achievement duck. The crowning achievement of unparalleled craftsmanship, a masterpiece that demanded impossible sacrifices and miraculous skill. A creation so sublime that it transcends mere objects and becomes the stuff of dreams and legends.</description>
         <category>Item</category>
         <drawerType>MapMeshOnly</drawerType>
         <tickerType>Normal</tickerType>
