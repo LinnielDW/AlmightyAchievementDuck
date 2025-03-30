@@ -8,12 +8,26 @@ namespace AAD;
 
 public static class AchievementDuckUtils
 {
-    public static readonly CachedTexture
-        DuckGizmoTexture = new("duckascend");
+    public static readonly CachedTexture DuckGizmoTexture = new("duckascend");
 }
 
 public class AchievementDuckThingClass : ThingWithComps
 {
+    public override void SpawnSetup(Map map, bool respawningAfterLoad)
+    {
+        base.SpawnSetup(map, respawningAfterLoad);
+        Log.Message(Graphic.data.graphicClass);
+        Log.Message(Graphic.Shader);
+        Log.Message(Graphic.data.shaderType);
+
+        foreach (var shaderParameter in Graphic.data.shaderParameters)
+        {
+            Log.Message(shaderParameter.name);
+            Log.Message(shaderParameter.value);
+        }
+        // Graphic.Shader.property
+    }
+
     public override IEnumerable<Gizmo> GetGizmos()
     {
         foreach (Gizmo gizmo in base.GetGizmos())

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+    <AAD.DuckShaderTypeDef>
+        <defName>AAD_TimeColorCutoutComplex</defName>
+        <shaderPath>Assets/Materials/Shaders/TimeColorCutoutComplex.shader</shaderPath>
+    </AAD.DuckShaderTypeDef>
+    
     <ThingDef>
         <thingClass>AAD.AchievementDuckThingClass</thingClass>
         <defName>AAD_AlmightyAchievementDuck</defName>
         <label>almighty achievement duck</label>
         <description>The almighty achievement duck. The crowning achievement of unparalleled craftsmanship, a masterpiece that demanded impossible sacrifices and miraculous skill. A creation so sublime that it transcends mere objects and becomes the stuff of dreams and legends.</description>
         <category>Item</category>
-        <drawerType>MapMeshOnly</drawerType>
+        <drawerType>RealtimeOnly</drawerType>
         <tickerType>Normal</tickerType>
         <rotatable>false</rotatable>
         <altitudeLayer>Item</altitudeLayer>
@@ -18,8 +23,22 @@
         <drawGUIOverlay>true</drawGUIOverlay>
         <pathCost>14</pathCost>
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>ducksprite</texPath>
+            <graphicClass>Graphic_Single_AgeSecs</graphicClass>
+            <shaderType>AAD_TimeColorCutoutComplex</shaderType>
+            <shaderParameters>
+                <_ColorCycleSpeed>0.1</_ColorCycleSpeed>
+                <_ColorIntensity>0.2</_ColorIntensity>
+            </shaderParameters>
+            
+            
+            <!-- <shaderType>TransparentColorLerp</shaderType> -->
+            <!-- <drawSize>1</drawSize> -->
+            <!-- <shaderParameters> -->
+            <!--     <_ColorLerp>/Things/Mote/IncineratorSmokeColorLerp</_ColorLerp> -->
+            <!--     <_Duration>1</_Duration> -->
+            <!-- </shaderParameters> -->
+            
+            <texPath>ducksprite_gray</texPath>
         </graphicData>
         <statBases>
             <Mass>1</Mass>

@@ -24,3 +24,19 @@ public class AlmightyAchievementDuck : Mod
         settings.DoSettingsWindowContents(inRect);
     }
 }
+
+public class DuckShaderTypeDef : ShaderTypeDef
+{
+    public override void PostLoad()
+    {
+        if (!shaderPath.NullOrEmpty())
+            LongEventHandler.ExecuteWhenFinished(delegate
+            {
+                Log.Message("Loading shader at path: " + shaderPath);
+                ShaderDatabase.lookup[shaderPath] = modContentPack.assetBundles
+                    .loadedAssetBundles[0].LoadAsset<Shader>(shaderPath);
+
+                Log.Message("Shader " + ShaderDatabase.lookup[shaderPath] + " loaded");
+            });
+    }
+}
