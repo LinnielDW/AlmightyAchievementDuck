@@ -30,6 +30,7 @@
         <alwaysHaulable>true</alwaysHaulable>
         <drawGUIOverlay>true</drawGUIOverlay>
         <pathCost>14</pathCost>
+        <uiIconPath>ducksprite</uiIconPath>
         <graphicData>
             <graphicClass>Graphic_Single_AgeSecs</graphicClass>
             <shaderType>AAD_TimeColorCutout</shaderType>
