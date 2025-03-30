@@ -5,6 +5,14 @@
         <defName>AAD_TimeColorCutoutComplex</defName>
         <shaderPath>Assets/Materials/Shaders/TimeColorCutoutComplex.shader</shaderPath>
     </AAD.DuckShaderTypeDef>
+    <AAD.DuckShaderTypeDef>
+        <defName>AAD_TimeColorCutout</defName>
+        <shaderPath>Assets/Materials/Shaders/TimeColorCutout.shader</shaderPath>
+    </AAD.DuckShaderTypeDef>
+    <AAD.DuckShaderTypeDef>
+        <defName>AAD_TransparentColorLerpCopy</defName>
+        <shaderPath>Assets/Materials/Shaders/TransparentColorLerpCopy.shader</shaderPath>
+    </AAD.DuckShaderTypeDef>
     
     <ThingDef>
         <thingClass>AAD.AchievementDuckThingClass</thingClass>
@@ -24,21 +32,17 @@
         <pathCost>14</pathCost>
         <graphicData>
             <graphicClass>Graphic_Single_AgeSecs</graphicClass>
-            <shaderType>AAD_TimeColorCutoutComplex</shaderType>
+            <shaderType>AAD_TimeColorCutout</shaderType>
             <shaderParameters>
-                <_ColorCycleSpeed>0.1</_ColorCycleSpeed>
-                <_ColorIntensity>0.2</_ColorIntensity>
+                <_ColorCycleSpeed>3</_ColorCycleSpeed>
+                <_ColorIntensity>0.4</_ColorIntensity>
+                <_Brightness>1.3</_Brightness>
+                <_Saturation>0.6</_Saturation>
             </shaderParameters>
-            
-            
-            <!-- <shaderType>TransparentColorLerp</shaderType> -->
-            <!-- <drawSize>1</drawSize> -->
-            <!-- <shaderParameters> -->
-            <!--     <_ColorLerp>/Things/Mote/IncineratorSmokeColorLerp</_ColorLerp> -->
-            <!--     <_Duration>1</_Duration> -->
-            <!-- </shaderParameters> -->
+            <drawSize>1.25</drawSize>
             
             <texPath>ducksprite_gray</texPath>
+            <!-- <texPath>ducksprite_washed</texPath> -->
         </graphicData>
         <statBases>
             <Mass>1</Mass>

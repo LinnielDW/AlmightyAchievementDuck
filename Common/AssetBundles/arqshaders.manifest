@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 951528835
+CRC: 105449800
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 59e112cb9549f1ae9bf52621f769cd8e
+    Hash: 63944037b0798e075a66d9fbcf76d13c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 55d48f4ad9c3b13330b9eb5ee5686477
@@ -14,5 +14,6 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Materials/Shaders/TimeColorCutout.shader
+- Assets/Materials/Shaders/TransparentColorLerpCopy.shader
 - Assets/Materials/Shaders/TimeColorCutoutComplex.shader
 Dependencies: []

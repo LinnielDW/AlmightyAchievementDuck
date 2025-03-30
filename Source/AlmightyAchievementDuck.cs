@@ -1,4 +1,6 @@
+using System.Reflection;
 using AAD.Settings;
+using HarmonyLib;
 using UnityEngine;
 using Verse;
 
@@ -11,6 +13,9 @@ public class AlmightyAchievementDuck : Mod
     public AlmightyAchievementDuck(ModContentPack content) : base(content)
     {
         settings = GetSettings<AlmightyAchievementDuckSettings>();
+        
+        var harmony = new Harmony("com.arquebus.rimworld.mod.almightyachievementduck");
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 
     public override string SettingsCategory()
