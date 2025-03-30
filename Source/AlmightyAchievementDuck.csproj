@@ -55,6 +55,13 @@
         <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5-*"/>
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+        <PackageReference Include="Krafs.Publicizer" Version="2.*" />
+        <Publicize Include="Assembly-CSharp:Verse.ShaderDatabase.lookup" />
+        <Publicize Include="Assembly-CSharp:Verse.ShaderParameter.name" />
+        <Publicize Include="Assembly-CSharp:Verse.ShaderParameter.value" />
+    </ItemGroup>
+    <ItemGroup>
       <Folder Include="Common\Textures\" />
     </ItemGroup>
 
