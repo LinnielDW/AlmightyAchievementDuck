@@ -4,6 +4,7 @@
     <author>Arquebus</author>
     <supportedVersions>
         <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
     <packageId>Arquebus.AlmightyAchievementDuck</packageId>
     <description>Almighty achievement duck adds a single item to the game; the titular almighty achievement duck, a true endgame challenge in a rubber duck disguise. Crafted at a crafting spot and requiring one of almost every item in the game, both gathering the ingredients and actually crafting the duck will test your sanity as a player.\n\nThe crafting recipe for the duck scales with your modlist and is configurable in the mod's settings for maximum compatibility.\n\nThose who are actually achieve their labours, will be rewarded with a beautiful relic, the almighty rubber duck, capable of triggering a custom game ending and installable in ideology (if you own it) reliquaries.</description>

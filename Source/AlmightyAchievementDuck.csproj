@@ -16,7 +16,7 @@
         <DebugSymbols>true</DebugSymbols>
         <DebugType>portable</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>../1.5/Assemblies</OutputPath>
+        <OutputPath>../1.6/Assemblies</OutputPath>
         <DefineConstants>DEBUG;TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <DebugType>none</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>../1.5/Assemblies</OutputPath>
+        <OutputPath>../1.6/Assemblies</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -46,17 +46,23 @@
         <version1_5 Include="..\1.5\**">
             <Link>1.5\%(RecursiveDir)%(Filename)%(Extension)</Link>
         </version1_5>
+        <version1_6 Include="..\1.6\**">
+            <Link>1.5\%(RecursiveDir)%(Filename)%(Extension)</Link>
+        </version1_6>
     </ItemGroup>
 
     <!-- The below condition will check if you've defined a reference called "Assembly-CSharp" and if that reference exists on disk.
         If that reference does not exist, it will add Krafs Rimworld Ref to the project. If it does exist, Krafs won't be added
         as a reference. This basically means that Krafs is treated as a fallback if Assembly-CSharp is not found -->
     <ItemGroup Condition="'@(Reference->WithMetadataValue('Identity', 'Assembly-CSharp')->Metadata('HintPath')->Exists())' == ''">
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5-*"/>
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4515-beta" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Lib.Harmony" Version="2.3.3" />
-        <PackageReference Include="Krafs.Publicizer" Version="2.*" />
+        <PackageReference Include="Lib.Harmony" Version="2.3.6" />
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <Publicize Include="Assembly-CSharp:Verse.ShaderDatabase.lookup" />
         <Publicize Include="Assembly-CSharp:Verse.ShaderParameter.name" />
         <Publicize Include="Assembly-CSharp:Verse.ShaderParameter.value" />
@@ -78,6 +84,7 @@
         <Copy SourceFiles="@(CommonFiles)" DestinationFolder="$(ModLocation)\%(RecursiveDir)" SkipUnchangedFiles="true" />
         <Copy SourceFiles="@(AboutFiles)" DestinationFolder="$(ModLocation)\About\%(RecursiveDir)" SkipUnchangedFiles="true" />
         <Copy SourceFiles="@(version1_5)" DestinationFolder="$(ModLocation)\1.5\%(RecursiveDir)" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(version1_6)" DestinationFolder="$(ModLocation)\1.6\%(RecursiveDir)" SkipUnchangedFiles="true" />
         <Copy SourceFiles="..\LoadFolders.xml" DestinationFolder="$(ModLocation)" SkipUnchangedFiles="true" />
     </Target>
 
